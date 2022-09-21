@@ -1,0 +1,39 @@
+body {
+    background-color: #282a36;
+    color: #f8f8f2;
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container label {
+    font-size: 1.5em;
+    font-family: monospace;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+textarea {
+    background-color: #44475a;
+    border: 2px solid #ffb86c;
+    font-family: sans-serif;
+    border-radius: 0.5em;
+    padding: 1em;
+    font-size: 1em;
+    color: #f8f8f2;
+    margin-top: 20px;
+}
+
+.textinfo {
+    margin-top: 10px;
+    font-family: monospace;
+    display: flex;
+    justify-content: end;
+    font-weight: 700;
+}
