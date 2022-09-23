@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EMI Caliculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-group">
+            <label for="amount">Loan Amount</label>
+            <input type="number" name="amount" id="amount">
+            <label for="rate">Intrest Rate</label>
+            <input type="number" name="rate" id="intrest">
+            <label for="tenure">Tenure</label>
+            <input type="number" name="tenure" id="time">
+            <button onclick="caliculate()">Caliculate</button>
+        </div>
+        <div class="output-group">
+            <p>EMI <span id="emi">0</span></p>
+            <p>Intrest Payable <span id="payIntrest">0</span></p>
+            <p>Total Amount <span id="total">0</span></p>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
