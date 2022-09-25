@@ -1,0 +1,38 @@
+body{
+    font-family: monospace;
+    background-color: #282a36;
+    color: #f8f8f2;
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 4em;
+    color: #ffb86c;
+}
+
+p {
+    font-size: 5em;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+svg {
+    height: 80px;
+    fill: #bd93f9;
+}
