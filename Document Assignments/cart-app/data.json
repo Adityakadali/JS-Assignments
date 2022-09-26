@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "item": "Telivision",
+      "price": "10000",
+      "image": "https://m.media-amazon.com/images/I/71ucdOv5WCS._SL1500_.jpg"
+    },
+    {
+      "id": 2,
+      "item": "Mobile",
+      "price": "5000",
+      "image": "https://m.media-amazon.com/images/I/91kAtEXPIeL._SL1500_.jpg"
+    },
+    {
+      "id": 3,
+      "item": "Laptop",
+      "price": "50000",
+      "image": "https://m.media-amazon.com/images/I/91oF9q-jE5L._SL1500_.jpg"
+    }
+  ]
+}
