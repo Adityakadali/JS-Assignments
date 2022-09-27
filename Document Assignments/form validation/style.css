@@ -1,0 +1,46 @@
+body {
+  background-color: #2e3440;
+  color: #eceff4;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  place-content: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 0.5em;
+}
+
+.form-group input {
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  border: 1px solid black;
+}
+
+.submit {
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.required::after {
+  content: "*";
+  margin-left: 5px;
+}
+
+.input-hint {
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.error {
+  background-color: #bf616a;
+  max-width: 400px;
+}

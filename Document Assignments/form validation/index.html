@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <p class="error"></p>
+      </div>
+      <form class="form-group" id="form" action="">
+        <label for="name" class="required">Name</label>
+        <input type="text" id="name" name="name" />
+        <label for="email" class="required">Email</label>
+        <input type="email" name="email" id="email" />
+        <label for="mobile">Mobile</label>
+        <input type="text" name="mobile" id="mobile" />
+        <label for="" class="required">Gender</label>
+        <div>
+          <label>
+            <input type="radio" name="gender" value="male" required />
+            Male
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female" required />
+            Female
+          </label>
+        </div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+        <p class="input-hint">
+          Password must contain special charecters and number
+        </p>
+        <label for="confirm">Confirm Password</label>
+        <input type="password" name="confirm" id="confirm" required />
+        <div>
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms">I agree to the conditions</label>
+        </div>
+        <button type="submit" id="submit" class="submit" disabled>
+          Create Account
+        </button>
+      </form>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
