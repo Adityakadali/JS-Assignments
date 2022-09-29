@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <!-- waller wrapper` -->
+        <div class="wallet-wrapper">
+          <i class="bx bx-wallet"></i>
+          <p class="wallet-price">Rs. <span id="total">5000</span></p>
+        </div>
+
+        <div class="input-form" id="input-form">
+          <input
+            type="text"
+            class="input"
+            placeholder="Income/Expense"
+            id="details"
+          />
+          <input type="text" class="input" id="amount" placeholder="Amount" />
+          <select name="details" id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+          <button class="submit-btn">
+            <i class="bx bxs-plus-circle"></i>
+          </button>
+        </div>
+      </header>
+
+      <div class="info-wrapper">
+        <div class="income-info">
+          <h2>Income</h2>
+          <table>
+            <thead>
+              <tr>
+                <th id="no">S.No</th>
+                <th id="income">Name</th>
+                <th id="income-amount">Amount</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Salary</td>
+                <td>Rs. 50,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="expense-info">
+          <h2>Expenses</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Salary</td>
+                <td>Rs. 50,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
