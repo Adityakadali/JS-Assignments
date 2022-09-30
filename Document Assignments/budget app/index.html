@@ -28,7 +28,7 @@
             placeholder="Income/Expense"
             id="details"
           />
-          <input type="text" class="input" id="amount" placeholder="Amount" />
+          <input type="number" class="input" id="amount" placeholder="Amount" />
           <select name="details" id="type">
             <option value="income">Income</option>
             <option value="expense">Expense</option>
@@ -45,18 +45,14 @@
           <table>
             <thead>
               <tr>
-                <th id="no">S.No</th>
-                <th id="income">Name</th>
-                <th id="income-amount">Amount</th>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Amount</th>
               </tr>
             </thead>
 
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Salary</td>
-                <td>Rs. 50,000</td>
-              </tr>
+            <tbody id="income-body">
+              <tr></tr>
             </tbody>
           </table>
         </div>
@@ -72,13 +68,7 @@
               </tr>
             </thead>
 
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Salary</td>
-                <td>Rs. 50,000</td>
-              </tr>
-            </tbody>
+            <tbody id="expense-body"></tbody>
           </table>
         </div>
       </div>
