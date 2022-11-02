@@ -21,22 +21,29 @@
           <p class="wallet-price">Rs. <span id="total">5000</span></p>
         </div>
 
-        <div class="input-form" id="input-form">
+        <form class="input-form" id="input-form">
           <input
             type="text"
             class="input"
             placeholder="Income/Expense"
             id="details"
+            required
           />
-          <input type="number" class="input" id="amount" placeholder="Amount" />
+          <input
+            type="number"
+            class="input"
+            id="amount"
+            placeholder="Amount"
+            required
+          />
           <select name="details" id="type">
             <option value="income">Income</option>
             <option value="expense">Expense</option>
           </select>
-          <button class="submit-btn">
+          <button type="submit" class="submit-btn">
             <i class="bx bxs-plus-circle"></i>
           </button>
-        </div>
+        </form>
       </header>
 
       <div class="info-wrapper">

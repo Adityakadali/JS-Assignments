@@ -9,6 +9,9 @@ submits.addEventListener("click", update);
 let income = [];
 let expense = [];
 
+let incId = 0;
+let expId = 0;
+
 function update() {
   let formName = form.querySelector("#details").value;
   let formAmount = form.querySelector("#amount").value;
@@ -19,17 +22,23 @@ function update() {
     amount: formAmount,
     type: formType,
   };
-  tr.innerHTML = buildRow(formName, formAmount, formType);
+
   if (formType == "income") {
+    incId++;
+    tr.innerHTML = buildRow(incId, formName, formAmount);
     incomeTable.appendChild(tr);
     income.push(obj);
   } else if (formType == "expense") {
+    expId++;
+    tr.innerHTML = buildRow(expId, formName, formAmount);
     expenseTable.appendChild(tr);
     expense.push(obj);
   }
   clearForm();
   updateTotal();
 }
+
+updateTotal();
 
 // Clears input form
 
@@ -41,11 +50,12 @@ function clearForm() {
 
 // returns table row innerHTML
 
-function buildRow(name, amount, type) {
+function buildRow(id, name, amount) {
   let innerHTML = `
+  <td>${id}</td>
   <td>${name}</td>
-  <td>${amount}</td>
-  <td>${type}</td>`;
+  <td>Rs. ${amount}</td>
+  `;
   return innerHTML;
 }
 
@@ -54,5 +64,3 @@ function updateTotal() {
   let exp = expense.reduce((a, b) => a + parseInt(b.amount), 0);
   total.innerText = inc - exp;
 }
-
-updateTotal();
