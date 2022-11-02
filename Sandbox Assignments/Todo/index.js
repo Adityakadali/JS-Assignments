@@ -30,9 +30,9 @@ function RenderTodos() {
     let item = document.createElement("div");
     item.classList.add("item", `todo-${i}`);
     item.innerHTML = `
-              <input data-id=${i} type="text" class="item_input" value=${e} disabled />
-              <button data-id=${i} class="editButton">Edit</button>
-              <button data-id=${i} class="deleteButton">Delete</button>`;
+              <input data-id="${i}" type="text" class="item_input" value="${e}" disabled />
+              <button data-id="${i}" class="editButton">Edit</button>
+              <button data-id="${i}" class="deleteButton">Delete</button>`;
     container.appendChild(item);
   });
   AddListeners();
